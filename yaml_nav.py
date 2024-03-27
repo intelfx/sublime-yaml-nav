@@ -67,9 +67,6 @@ class YamlNavListener(sublime_plugin.EventListener):
 
     def on_load(self, view):
         if is_yaml_view(view):
-            # Force our custom syntax
-            view.set_syntax_file("Packages/YAML Nav/YAML-ng.sublime-syntax")
-
             # Build list after file load
             self.update_yaml_symbols(view)
 
