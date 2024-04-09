@@ -6,5 +6,22 @@
     {
         "caption": "YAML Nav: Copy Symbol To Clipboard",
         "command": "copy_yaml_symbol_to_clipboard"
-    }
+    },
+    {
+        "caption": "Preferences: YAML Nav Settings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/YAML Nav/YAML Nav.sublime-settings",
+            "default": "// Settings in here override those in \"YAML Nav/YAML Nav.sublime-settings\"\n{\n\t$0\n}\n"
+        }
+    },
+    {
+        "caption": "Preferences: YAML Nav Key Bindings",
+        "command": "edit_settings",
+        "args": {
+            "base_file": "${packages}/YAML Nav/Default.sublime-keymap",
+            "user_file": "${packages}/User/Default ($platform).sublime-keymap",
+            "default": "[\n\t${0}\n]\n",
+        },
+    },
 ]
